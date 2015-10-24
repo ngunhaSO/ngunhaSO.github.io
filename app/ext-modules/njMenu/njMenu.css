@@ -1,0 +1,130 @@
+﻿body {
+    position: relative;
+}
+.nj-menu-area {
+    position: relative;
+    background-color: #333;
+    color: #ccc;
+    padding-left: 0;
+    display:inline-block;
+    margin: 5px;
+}
+
+.nj-menu-area-vertical {
+    width: 16%;
+    min-height: 100vh;
+    padding-top: 30px;
+    float:left;
+    height:100%;
+}
+
+.nj-menu-area-horizontal {
+    width: 100%;
+    height: auto;
+    min-height: 100% !important;
+    padding-left: 200px;
+}
+
+.nj-menu-area ul {
+    padding-left: 0;
+}
+
+.nj-menu-area .btn:hover {
+    color: #ccc;
+}
+
+.nj-menu {
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.nj-menu ul {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nj-menu li {
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.nj-menu li div {
+    display: inline-block;
+    width: 90%;
+    padding-left: 16px;
+}
+
+.nj-selectable-item:hover {
+    background-color: #555;
+}
+
+.nj-menu-icon {
+    margin-right: 10px;
+}
+
+.nj-menu-active-indicator {
+    float: right;
+    color: #ddd;
+    margin-right: 0;
+    margin-top: 8px;
+}
+
+.nj-noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nj-group-indicator-left {
+    float: right;
+    color: #ddd;
+    margin-right: 2px;
+    margin-top: 15px;
+}
+
+.nj-subitem-section {
+    padding-left: 16px;
+}
+
+.nj-menu-layout-button {
+    margin: 12px;
+    padding: 2px 8px;
+    color: #bbb;
+    background-color: #333;
+    border: 1px solid #999;
+}
+
+.nj-layout-button-horizontal {
+    position: absolute;
+    top: -6px;
+    right: 10px;
+}
+
+.nj-item-horizontal {
+    display: inline-block;
+    width: 165px !important;
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 1.5em !important;
+}
+
+.nj-popup-menu {
+    position: absolute;
+    z-index: 1000;
+    background-color: #333;
+    width: 200px;
+    padding-left: 0;
+}
+
+.nj-fade-in-animation {
+    -moz-transition: linear all 0.5s;
+    -o-transition: linear all 0.5s;
+    -webkit-transition: linear all 0.5s;
+    transition: linear all 0.5s;
+}
+.nj-fade-in-animation.ng-hide {
+    opacity: 0;
+}

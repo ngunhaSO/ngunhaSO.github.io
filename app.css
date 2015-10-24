@@ -1,0 +1,56 @@
+﻿.icon {
+    width: 100%;
+    z-index: 0;
+}
+
+.title-bar {
+    background-color: white;
+    padding: 0 20px;
+}
+
+.container {
+    float: right;
+    vertical-align: top;
+    width: 83%;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.pushleft {
+    float: left;
+}
+
+.pushright {
+    float: right;
+}
+
+@media only screen and (max-device-width : 1235px) {
+    .container {
+        float: right;
+        vertical-align: top;
+        width: 78%;
+        padding-top: 20px;
+        display: inline-block;
+        border:solid dashed 20px;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+@media only screen and (min-width:660px) and (max-width:1024px) {
+
+}
+
+@media only screen and (max-width:659px) {
+    .container {
+        float: right;
+        vertical-align: top;
+        width: 78%;
+        padding-top: 20px;
+        display: inline-block;
+        border: solid dashed 20px;
+    }
+}

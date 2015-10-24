@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html ng-app="nguyenjacky">
+<head>
+    <title>Nguyen Jacky</title>
+    <meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- cheat sheet font awesome: https://fortawesome.github.io/Font-Awesome/cheatsheet/-->
+
+    <link href="app/ext-modules/njMenu/njMenu.css" rel="stylesheet" /> <!-- style for menu navigation-->
+    <link href="app.css" rel="stylesheet" /> <!--style for index.html-->
+    <link href="app/about/about.css" rel="stylesheet" />
+
+    <!-- Libraries scripts -->
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap.js"></script> <!-- ui boostrap stuff-->
+    <script src="Scripts/angular-resource.js"></script> <!-- using $resource directive-->
+    <script src="Scripts/angular-mocks.js"></script>    <!-- mocking service-->
+    <script src="Scripts/angular-ui-router.js"></script> <!--for routing-->
+
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular-ui/ui-utils.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+
+</head>
+<body ng-controller="AppCtrl">
+
+
+    <div class="title-bar">
+        <div class="row">
+            <img class="icon" src="images/redsquare.jpg" />
+            <div class="logo-area col-sm-6">
+                
+                <!--<div class="title-area">
+                    <p class="logo-title">Jacky Nguyen - Software Engineer</p>
+                    <p class="logo-subtitle">Olympia, Washington</p>
+                </div>-->
+
+                <div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()"
+                     class="collapsed-menu pull-right">
+                    <button type="button" class="btn nav-button">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {{isMenuButtonVisible}}
+
+    <div class="menu">
+        <nj-menu>
+            <nj-menu-item label="Home" icon="fa-home" route="home"></nj-menu-item>
+            <nj-menu-item label="About" icon="fa-user" route="about"></nj-menu-item>
+            <nj-menu-item label="Project" icon="fa-tasks" route="project"></nj-menu-item>
+            <nj-menu-item label="Cities" icon="fa-map-marker" route="location"></nj-menu-item>
+        </nj-menu>
+
+    </div>
+
+
+    <div class="container">
+        <div ui-view></div>
+    </div>
+
+
+    <!-- External Modules -->
+    <script src="app/ext-modules/njMenu/njMenuModule.js"></script>
+    <script src="app/ext-modules/njMenu/njMenuController.js"></script>
+
+    <script src="app/ext-modules/njMenu/njMenuDirective.js"></script>
+    <script src="app/ext-modules/njMenu/njMenuItemDirective.js"></script>
+
+
+    <!-- Application script -->
+    <script src="app/app.js"></script>
+    <script src="app/appRouteConfig.js"></script>
+    <script src="app/appController.js"></script>
+
+    <script src="app/home/homeModule.js"></script>
+    <script src="app/home/homeController.js"></script>
+
+    <script src="app/about/aboutModule.js"></script>
+    <script src="app/about/aboutController.js"></script>
+
+    <script src="app/project/projectModule.js"></script>
+    <script src="app/project/projectController.js"></script>
+
+    <script src="app/location/locationModule.js"></script>
+    <script src="app/location/locationController.js"></script>
+    <!-- Services scripts -->
+    <!-- Controller scripts -->
+
+</body>
+</html>

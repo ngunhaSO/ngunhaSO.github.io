@@ -1,0 +1,15 @@
+﻿<div class="nj-menu-area" 
+     ng-show="showMenu"
+     ng-class="{'nj-menu-area-vertical': isVertical, 'nj-menu-area-horizontal': !isVertical}">
+
+    <ul class="nj-menu" ng-transclude> </ul> <!--neste directive will be inflated here-->
+
+    <a class="btn nj-menu-layout-button"
+       ng-show="allowHorizontalToggle"
+       ng-class="{'nj-layout-button-horizontal': !isVertical}"
+       ng-click="toggleMenuOrientation()">
+
+        <i class="fa"
+           ng-class="{'fa-chevron-up': isVertical, 'fa-chevron-left': !isVertical}"></i>
+    </a>
+</div>

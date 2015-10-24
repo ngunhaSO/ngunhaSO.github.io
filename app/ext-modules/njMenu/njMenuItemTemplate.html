@@ -1,0 +1,8 @@
+﻿<li class="nj-selectable-item" ng-class="{'nj-item-horizontal': !isVertical()}">
+    <div class="nj-noselect">
+        <i class="fa {{icon}} nj-menu-icon"></i>
+        {{label}}
+    </div>
+    <i ng-if="isActive() && isVertical()"
+       class="fa fa-2x fa-caret-left ps-menu-active-indicator"></i>
+</li>
