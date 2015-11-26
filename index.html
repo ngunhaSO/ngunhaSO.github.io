@@ -1,98 +1,497 @@
 ﻿<!DOCTYPE html>
-<html ng-app="nguyenjacky">
+<html lang="en">
 <head>
-    <title>Nguyen Jacky</title>
-    <meta charset="utf-8" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Jacky Nguyen</title>
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    <!-- cheat sheet font awesome: https://fortawesome.github.io/Font-Awesome/cheatsheet/-->
-
-    <link href="app/ext-modules/njMenu/njMenu.css" rel="stylesheet" /> <!-- style for menu navigation-->
-    <link href="app.css" rel="stylesheet" /> <!--style for index.html-->
-    <link href="app/about/about.css" rel="stylesheet" />
-
-    <!-- Libraries scripts -->
-    <script src="Scripts/jquery-1.9.1.js"></script>
-    <script src="Scripts/angular.js"></script>
-    <script src="Scripts/angular-ui/ui-bootstrap.js"></script> <!-- ui boostrap stuff-->
-    <script src="Scripts/angular-resource.js"></script> <!-- using $resource directive-->
-    <script src="Scripts/angular-mocks.js"></script>    <!-- mocking service-->
-    <script src="Scripts/angular-ui-router.js"></script> <!--for routing-->
-
-    <script src="Scripts/bootstrap.js"></script>
-    <script src="Scripts/angular-ui/ui-utils.js"></script>
-    <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
-
+    <style>
+        #profile {
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+            -webkit-border-radius: 150px;
+            -moz-border-radius: 150px;
+        }
+    </style>
 </head>
-<body ng-controller="AppCtrl">
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Jacky Nguyen</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <!--<li class="page-scroll">
+                        <a href="#contact">Blog</a>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img id="profile" class="img-responsive" src="img/profile.jpg" alt="">
+                    <div class="intro-text">
 
-
-    <div class="title-bar">
-        <div class="row">
-            <img class="icon" src="images/redsquare.jpg" />
-            <div class="logo-area col-sm-6">
-                
-                <!--<div class="title-area">
-                    <p class="logo-title">Jacky Nguyen - Software Engineer</p>
-                    <p class="logo-subtitle">Olympia, Washington</p>
-                </div>-->
-
-                <div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()"
-                     class="collapsed-menu pull-right">
-                    <button type="button" class="btn nav-button">
-                        <i class="fa fa-bars"></i>
-                    </button>
+                        <hr class="star-light">
+                        <span class="skills">
+                            Application Developer (ITS 3),<br />
+                            Washington State County Road Administration Board
+                        </span>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </header>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#intl-student-office" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/international-student-office.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#transportation-metrics" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/transportation-metrics.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#querybuilder" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/query-builder.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#sspst" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/sspst.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#mobility" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/mobility.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#movie-rating" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/movie-rating.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Software Developer</h3>
+                    <p>
+                        • Applications developer with a strong background in .NET. Occasionally I still get to play with Java (in the context of Android, and CodeForces challenges)
+                        and other languages (Axapta, JavaScript). <br />
+                        • Currently learning MS Dynamics AX 2012 and TypeScript.  <br />
+                        <a href="http://stackoverflow.com/users/1482044/jacky-nguyen">
+                            <img src="http://stackoverflow.com/users/flair/1482044.png?theme=dark" width="208" height="58" alt="profile for Jacky Nguyen at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Jacky Nguyen at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+                        </a>
+                        <a href="https://github.com/ngunhaSO">
+                            <img src="img/Octocat.png" width="108" height="58"
+                                 alt="profile for Jacky Nguyen at Github"
+                                 title="profile for Jacky Nguyen at Github">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Skills Set</h3>
+                    <p>
+                        • Languages: C#, VB.Net, Java, Axapta (X++) <br />
+                        • ORM: Entity Framework <br />
+                        • Web technologies: ASP.NET MVC/WebApi, JavaScript, AngularJS, HTML5, CSS3, Bootstrap <br />
+                        • Database: SQL Server, SSRS <br />
+                        • Mobile development: Android <br />
+                        • ERP: MS Dynamics AX 2012
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Olympia, WA<br>About 90 minutes south of Seattle</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://ngunha02.wordpress.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-wordpress"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/nhan-jacky-nguyen-38511056" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <p>"Acknowledge your faults so you can overcome them." - Unknown</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Jacky Nguyen 2015 <br />
+                        Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="intl-student-office" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>International Student Office</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/international-student-office.png" class="img-responsive img-centered" alt="">
+                            <p>
+                                A website for South Puget Sound Community College - International Student Office.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Date:
+                                    <strong>
+                                        March 2012
+                                    </strong>
+                                </li>
+                                <li>
+                                    Technologies:
+                                    <strong>
+                                        ASP.NET MVC, SQL Server, jQuery, HTML5, CSS3
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    {{isMenuButtonVisible}}
-
-    <div class="menu">
-        <nj-menu>
-            <nj-menu-item label="Home" icon="fa-home" route="home"></nj-menu-item>
-            <nj-menu-item label="About" icon="fa-user" route="about"></nj-menu-item>
-            <nj-menu-item label="Project" icon="fa-tasks" route="project"></nj-menu-item>
-            <nj-menu-item label="Cities" icon="fa-map-marker" route="location"></nj-menu-item>
-        </nj-menu>
-
+    <div class="portfolio-modal modal fade" id="transportation-metrics" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>County Transportation Metrics</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/transportation-metrics.png" class="img-responsive img-centered" alt="">
+                            <p>
+                                A graphical web-based dashboard of county transportation performance measures.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Date:
+                                    <strong>
+                                        March 2013
+                                    </strong>
+                                </li>
+                                <li>
+                                    Technologies:
+                                    <strong>
+                                        ColdFusion, SQL Server, HTML5, CSS3, jQuery
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="querybuilder" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Query Builder</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/query-builder.png" class="img-responsive img-centered" alt="">
+                            <p>A light weight query builder that allows non programmers to query a database easily 
+                            for detailed analysis. 
+                            The end user only needs to select columns from tables/views/table functions in a tree view 
+                            to build the SQL Server query statement. The tool also supports column name aliasing, grouping, 
+                            sorting and filtering. The user can also save current selection to the Desktop in a 
+                            JSON format for later use.</p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Date:
+                                    <strong>
+                                        June 2013
+                                    </strong>
+                                </li>
+                                <li>
+                                    Technologies:
+                                    <strong>
+                                        C#, Winform, SQL Server
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="sspst" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Systemic Safety Project Selection Tool</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/sspst.png" class="img-responsive img-centered" alt="">
+                            <p>
+                                Provides a step by step process for conducting systemic safety analysis; 
+                                analytical techniques for determining a reasonable balance between the 
+                                implementation of spot safety improvements and systemic safety improvements, 
+                                and a mechanism for quantifying the benefits of safety improvements implemented 
+                                through a systemic approach.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Date:
+                                    <strong>
+                                        January 2015
+                                    </strong>
+                                </li>
+                                <li>
+                                    Technologies:
+                                    <strong>
+                                        VB.Net, Winform, ADO.Net data service, SQL Server
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="mobility" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mobility</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/mobility.png" class="img-responsive img-centered" alt="">
+                            <p>
+                                An inventory management system for county road infrastructures: horizontal curves, vertical curves, clear zone segment, etc.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Technologies:
+                                    <strong>
+                                        VB.Net, Winform, ADO.Net data service, SQL Server
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="movie-rating" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Movie Rating</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/movie-rating.png" class="img-responsive img-centered" alt="">
+                            <p>
+                                A web application displays a list of new movies in theater. This application was used to introduced WebAPI and AngularJS to the development team.
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Date:
+                                    <strong>
+                                        January 2015
+                                    </strong>
+                                </li>
+                                <li>
+                                    Technologies:
+                                    <strong>
+                                        C#, ASP.NET WebAPI, AngularJS, SQL Server, HTML5, CSS3, Bootstrap
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    <div class="container">
-        <div ui-view></div>
-    </div>
-
-
-    <!-- External Modules -->
-    <script src="app/ext-modules/njMenu/njMenuModule.js"></script>
-    <script src="app/ext-modules/njMenu/njMenuController.js"></script>
-
-    <script src="app/ext-modules/njMenu/njMenuDirective.js"></script>
-    <script src="app/ext-modules/njMenu/njMenuItemDirective.js"></script>
-
-
-    <!-- Application script -->
-    <script src="app/app.js"></script>
-    <script src="app/appRouteConfig.js"></script>
-    <script src="app/appController.js"></script>
-
-    <script src="app/home/homeModule.js"></script>
-    <script src="app/home/homeController.js"></script>
-
-    <script src="app/about/aboutModule.js"></script>
-    <script src="app/about/aboutController.js"></script>
-
-    <script src="app/project/projectModule.js"></script>
-    <script src="app/project/projectController.js"></script>
-
-    <script src="app/location/locationModule.js"></script>
-    <script src="app/location/locationController.js"></script>
-    <!-- Services scripts -->
-    <!-- Controller scripts -->
-
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
 </body>
 </html>
