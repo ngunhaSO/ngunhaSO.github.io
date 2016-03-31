@@ -30,6 +30,9 @@
             -webkit-border-radius: 150px;
             -moz-border-radius: 150px;
         }
+        .active{
+            z-index:99;
+        }
     </style>
 </head>
 <body id="page-top" class="index">
@@ -502,11 +505,11 @@
                         <div class="modal-body">
                             <h2>Volume Slicing Using Hours</h2>
                             <hr class="star-primary">
-                            <ul class="bxslider">
-                              <li><img src="img/portfolio/volume-slicing.png" class="img-responsive img-centered" alt="" /></li>
-                              <li><img src="img/portfolio/volume-slicing.png" class="img-responsive img-centered" alt="" /></li>
-                              <li><img src="img/portfolio/volume-slicing.png" class="img-responsive img-centered" alt="" /></li>
-                            </ul>
+                            <div id="slideshow">
+                                <img src="img/portfolio/volume-slicing.png" class="img-responsive img-centered active"  style="position:absolute;" alt="" />
+                                <img src="img/portfolio/volume-slicing.png" class="img-responsive img-centered" alt="" />
+                                <img src="img/portfolio/volume-slicing.png" class="img-responsive img-centered" alt="" />
+                            </div>
                             <p>
                                 In standard MECOMS™, it’s possible to set different tariffs based on the consumption volume. 
                                 For TCS, it’s necessary to set different tariffs based on the amount of hours.
@@ -548,10 +551,18 @@
     <script src="js/freelancer.js"></script>
     <!-- slider -->
     <script>
-        $('.bxslider').bxSlider({
-          auto: true,
-          autoControls: true
-        });
-    </script>
+    function slideSwitch() {
+        var $active = $('div#slideshow IMG.active');
+        var $next = $active.next();    
+
+        $next.addClass('active');
+
+        $active.removeClass('active');
+    }
+
+    $(function() {
+        setInterval( "slideSwitch()", 5000 );
+    });
+</script>
 </body>
 </html>
