@@ -502,7 +502,11 @@
                         <div class="modal-body">
                             <h2>Volume Slicing Using Hours</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/volume-slicing.png" class="img-responsive img-centered" alt="">
+                            <ul class="bxslider">
+                              <li><img src="img/portfolio/volume-slicing.png" class="img-responsive img-centered" alt="" /></li>
+                              <li><img src="img/portfolio/volume-slicing.png" class="img-responsive img-centered" alt="" /></li>
+                              <li><img src="img/portfolio/volume-slicing.png" class="img-responsive img-centered" alt="" /></li>
+                            </ul>
                             <p>
                                 In standard MECOMS™, it’s possible to set different tariffs based on the consumption volume. 
                                 For TCS, it’s necessary to set different tariffs based on the amount of hours.
@@ -542,5 +546,12 @@
     <script src="js/contact_me.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+    <!-- slider -->
+    <script>
+        $('.bxslider').bxSlider({
+          auto: true,
+          autoControls: true
+        });
+    </script>
 </body>
 </html>
