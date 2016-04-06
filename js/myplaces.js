@@ -3,7 +3,7 @@ var width = 960,
 
 var projection = d3.geo.mercator()
     .center([0, 5 ])
-    .scale(900)
+    .scale(200)
     .rotate([-180,0]);
 
 var svg = d3.select("#location").append("svg")
@@ -34,7 +34,7 @@ d3.csv("js/cities.csv", function(error, data) {
        .attr("cy", function(d) {
                return projection([d.lon, d.lat])[1];
        })
-       .attr("r", 3)
+       .attr("r", 5)
        .style("fill", "yellow"); //fill the dot with yellow color
        
     g.selectAll("text")
