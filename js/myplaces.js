@@ -2,7 +2,7 @@ var width = 480,
     height = 250;
 
 var projection = d3.geo.mercator()
-    .center([0, 5 ])
+    .center([100, 30 ])
     .scale(700)
     .rotate([-180,0]);
 
