@@ -49,6 +49,7 @@ d3.csv("js/cities.csv", function(error, data) {
        })
        .attr("dy", -7) // set y position of bottom of text
       .style("fill", "orange") // fill the text with the colour orange
+      .style("font-size","100px")
       .attr("text-anchor", "middle") // set anchor y justification
       .text(function(d) {return d.city;}); // define the text to display
 
