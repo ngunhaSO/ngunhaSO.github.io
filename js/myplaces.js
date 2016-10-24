@@ -15,16 +15,16 @@ var path = d3.geo.path()
 
 var g = svg.append("g");
 
-// Create the force layout with a slightly weak charge
-var force = d3.layout.force()
+// load and display the World
+d3.json("js/world-110m2.json", function(error, topology) {
+
+    // Create the force layout with a slightly weak charge
+    var force = d3.layout.force()
     .nodes(data)
     .charge(-20)
     .gravity(0)
     .size([width, height]);
-
-// load and display the World
-d3.json("js/world-110m2.json", function(error, topology) {
-
+	
 // load and display the cities
 d3.csv("js/cities.csv", function(error, data) {
     g.selectAll("circle")
