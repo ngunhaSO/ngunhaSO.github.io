@@ -17,7 +17,7 @@ var g = svg.append("g");
 
 // Create the force layout with a slightly weak charge
 var force = d3.layout.force()
-    .nodes(labels)
+    .nodes(data)
     .charge(-20)
     .gravity(0)
     .size([width, height]);
