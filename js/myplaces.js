@@ -15,6 +15,13 @@ var path = d3.geo.path()
 
 var g = svg.append("g");
 
+// Create the force layout with a slightly weak charge
+var force = d3.layout.force()
+    .nodes(labels)
+    .charge(-20)
+    .gravity(0)
+    .size([width, height]);
+
 // load and display the World
 d3.json("js/world-110m2.json", function(error, topology) {
 
@@ -34,7 +41,7 @@ d3.csv("js/cities.csv", function(error, data) {
        .attr("cy", function(d) {
                return projection([d.lon, d.lat])[1];
        })
-       .attr("r", 2)
+       .attr("r", 4)
        .style("fill", "yellow"); //fill the dot with yellow color
        
     g.selectAll("text")
