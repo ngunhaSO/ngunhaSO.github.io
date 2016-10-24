@@ -3,7 +3,7 @@ var width = 960,
 
 var projection = d3.geo.mercator()
     .center([0, 8 ])
-    .scale(200)
+    .scale(300)
     .rotate([-180,0]);
 
 var svg = d3.select("#location").append("svg")
