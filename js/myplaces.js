@@ -34,7 +34,7 @@ d3.csv("js/cities.csv", function(error, data) {
        .attr("cy", function(d) {
                return projection([d.lon, d.lat])[1];
        })
-       .attr("r", 4)
+       .attr("r", 2)
        .style("fill", "green"); //fill the dot with yellow color
        
     g.selectAll("text")
