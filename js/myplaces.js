@@ -37,7 +37,7 @@ d3.csv("js/cities.csv", function(error, data) {
        .attr("r", 2)
        .style("fill", "green")
 	.style("stroke", "white")
-       .style("stroke-width", 2)
+       .style("stroke-width", 0.5)
 	; //fill the dot with yellow color
        
     g.selectAll("text")
