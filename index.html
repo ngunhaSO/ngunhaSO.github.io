@@ -13,16 +13,15 @@
     <link href="css/freelancer.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="http://d3js.org/topojson.v0.min.js"></script>
+
 
     <style>
         #profile {
@@ -176,6 +175,16 @@
                         <img src="img/portfolio/volume-slicing.png" class="img-responsive" alt="">
                     </a>
                 </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#stockview" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/stockview.png" class="img-responsive" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -210,7 +219,7 @@
                     <p>
                         • Languages: C#, VB.Net, Java, Axapta (X++) <br />
                         • ORM: Entity Framework <br />
-                        • Web technologies: ASP.NET MVC/WebApi, JavaScript, AngularJS, HTML5, CSS3, Bootstrap, AIF <br />
+                        • Web technologies: ASP.NET MVC/WebApi, JavaScript, AngularJS, HTML5, CSS3, Bootstrap, AIF/WCF, D3.js <br />
                         • Database: SQL Server, SSRS <br />
                         • Mobile development: Android <br />
                         • ERP: MS Dynamics AX 2012
@@ -560,12 +569,56 @@
         </div>
     </div>
 
+    <div class="portfolio-modal modal fade" id="stockview" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2><a href="http://stockview.azurewebsites.net/">End of Day US Stock Price</a> </h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/stockview.png" class="img-responsive img-centered" alt="">
+                            <p>
+                                A toying web application for me to learn D3.JS. This application to call Quandl REST API to get end of day US stock price and display different charts, e.g.Open, Low, High, Volume,...
+                                <br />
+                                Link: http://stockview.azurewebsites.net/
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>
+                                    Date:
+                                    <strong>
+                                        December 2016
+                                    </strong>
+                                </li>
+                                <li>
+                                    Technologies:
+                                    <strong>
+                                        D3.js, HTML5, CSS3, Bootstrap, Quandl, RESTful API
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v0.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
     <!-- Contact Form JavaScript -->
