@@ -1,732 +1,128 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Jacky Nguyen</title>
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+﻿<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jacky Nguyen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body id="top">
 
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1>Software Developer<br />
+				</div>
+			</header>
 
-    <style>
-        #profile {
-            width: 300px;
-            height: 300px;
-            border-radius: 150px;
-            -webkit-border-radius: 150px;
-            -moz-border-radius: 150px;
-        }
-        .active{
-            z-index:99;
-        }
-        
-        path {
-          stroke: white;
-          stroke-width: 0.25px;
-          fill: grey;
-        }
-    </style>
-</head>
-<body id="page-top" class="index">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Jacky Nguyen</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <!--<li class="page-scroll">
-                        <a href="#contact">Blog</a>
-                    </li>-->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img id="profile" class="img-responsive" src="img/profile.jpg" alt="">
-                    <div class="intro-text">
+		<!-- Main -->
+			<div id="main">
 
-                        <hr class="star-light">
-                        <span class="skills">
-                            Application Consultant<br />
-                            Ferranti Computer Systems
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#intl-student-office" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/international-student-office.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#transportation-metrics" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/transportation-metrics.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#querybuilder" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/query-builder.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#sspst" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/sspst.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#mobility" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/mobility.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#cars" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cars1.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#movie-rating" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/movie-rating.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#volume-slicing" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/volume-slicing.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#ami" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/ami.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#stockview" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/stockview.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3>Software Developer</h3>
-                    <p>
-                        • Applications developer with a strong background in .NET. Occasionally I still get to play with Java (in the context of Android, and CodeForces challenges).
-                        <br />
-                        • Currently working as an application consultant using Microsoft Dynamics AX2012 <br />
-                        <a href="http://stackoverflow.com/users/1482044/jacky-nguyen">
-                            <img src="http://stackoverflow.com/users/flair/1482044.png?theme=dark" width="208" height="58" alt="profile for Jacky Nguyen at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Jacky Nguyen at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-                        </a>
-                        <a href="https://github.com/ngunhaSO">
-                            <img src="img/Octocat.png" width="108" height="58"
-                                 alt="profile for Jacky Nguyen at Github"
-                                 title="profile for Jacky Nguyen at Github">
-                        </a>
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <h3>Skills Set</h3>
-                    <p>
-                        • Languages: C#, VB.Net, Java, Axapta (X++) <br />
-                        • ORM: Entity Framework <br />
-                        • Web technologies: ASP.NET MVC/WebApi, JavaScript, AngularJS, HTML5, CSS3, Bootstrap, AIF/WCF, D3.js <br />
-                        • Database: SQL Server, SSRS <br />
-                        • Mobile development: Android <br />
-                        • ERP: MS Dynamics AX 2012
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>About Me</h2>
+						</header>
+                        <p>• Applications developer with a strong background in .NET. Occasionally I still get to play with Java (in the context of Android, and CodeForces challenges).</p>
+                        <p>
+                            • Languages: C#, VB.Net, Java, Axapta (X++) <br />
+                            • ORM: Entity Framework <br />
+                            • Web technologies: ASP.NET MVC/WebApi, JavaScript, AngularJS, HTML5, CSS3, Bootstrap, AIF/WCF, D3.js <br />
+                            • Database: SQL Server, SSRS, Firebase <br />
+                            • Mobile development: Android <br />
+                            • ERP: MS Dynamics AX 2012  
+                        </p>
+					</section>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Locations</h3>
-                        <p>Singapore</p>
-    
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://ngunha02.wordpress.com/" class="btn-social btn-outline"><i class="fa fa-fw fa-wordpress"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/nhan-jacky-nguyen-38511056" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <p>"Acknowledge your faults so you can overcome them." - Unknown</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Traveler's musing</p>
-                        <p>Cities where I have been to</p>
-                    </div>
-                    <div class="col-lg-12" id="location">
-                            
-                    </div>
-                    <div class="col-lg-12">
-                        Copyright &copy; Jacky Nguyen 2015 <br />
-                        Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="intl-student-office" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>International Student Office</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/international-student-office.png" class="img-responsive img-centered" alt="">
-                            <p>
-                                A website for South Puget Sound Community College - International Student Office.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    Date:
-                                    <strong>
-                                        March 2012
-                                    </strong>
-                                </li>
-                                <li>
-                                    Technologies:
-                                    <strong>
-                                        C#, ASP.NET MVC, SQL Server, jQuery, HTML5, CSS3
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="transportation-metrics" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>County Transportation Metrics</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/transportation-metrics.png" class="img-responsive img-centered" alt="">
-                            <p>
-                                A graphical web-based dashboard of county transportation performance measures.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    Date:
-                                    <strong>
-                                        March 2013
-                                    </strong>
-                                </li>
-                                <li>
-                                    Technologies:
-                                    <strong>
-                                        ColdFusion, SQL Server, HTML5, CSS3, jQuery
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="querybuilder" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Query Builder</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/query-builder.png" class="img-responsive img-centered" alt="">
-                            <p>A light weight query builder that allows non programmers to query a database easily 
-                            for detailed analysis. 
-                            The end user only needs to select columns from tables/views/table functions in a tree view 
-                            to build the SQL Server query statement. The tool also supports column name aliasing, grouping, 
-                            sorting and filtering. The user can also save current selection to the Desktop in a 
-                            JSON format for later use.</p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    Date:
-                                    <strong>
-                                        June 2013
-                                    </strong>
-                                </li>
-                                <li>
-                                    Technologies:
-                                    <strong>
-                                        C#, SQL Server
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="sspst" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Systemic Safety Project Selection Tool</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/sspst.png" class="img-responsive img-centered" alt="">
-                            <p>
-                                Provides a step by step process for conducting systemic safety analysis; 
-                                analytical techniques for determining a reasonable balance between the 
-                                implementation of spot safety improvements and systemic safety improvements, 
-                                and a mechanism for quantifying the benefits of safety improvements implemented 
-                                through a systemic approach.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    Date:
-                                    <strong>
-                                        January 2015
-                                    </strong>
-                                </li>
-                                <li>
-                                    Technologies:
-                                    <strong>
-                                        .Net, ADO.Net data service, SQL Server
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="mobility" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Mobility</h2>
-                            <hr class="star-primary">
-                            <div id="slideshow">
-                                <img src="img/portfolio/mobility.png" class="img-responsive img-centered" alt="">
-                                <img src="img/portfolio/CRAB4.png" class="img-responsive img-centered" alt="">
-                            </div>
-                            
-                            <p>
-                                An inventory management system for county road infrastructures: horizontal curves, vertical curves, clear zone segment, etc.
-                                A few key features are: <br /> 
-1) The pavement management system module that can predict pavement condition in the future and recommend maintenance activities to prolong the lifespan of the pavement. <br />
-2) A GIS map viewer for visualizing data such as pavement condition, pavement material, traffic volumes, etc.<br />
-3) A custom reporting tool that allows users to query the database in complex ways for detailed analysis <br />
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    Technologies:
-                                    <strong>
-                                        .Net, ADO.Net data service, SQL Server, GIS
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="cars" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>County Road Administration Board Annual Reporting System</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cars1.png" class="img-responsive img-centered" alt="">
-                            <p>
-                                A web application for 39 counties to submit various reports four times a year. CRAB management staff will review and approve the county reports through this system.                            </p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    Date:
-                                    <strong>
-                                        March 2015
-                                    </strong>
-                                </li>
-                                <li>
-                                    Technologies:
-                                    <strong>
-                                        ASP.Net WebAPI, AngularJS, SQL Server, Bootstrap
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="movie-rating" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Movie Rating</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/movie-rating.png" class="img-responsive img-centered" alt="">
-                            <p>
-                                A web application displays a list of new movies in theater. This application was used to introduced WebAPI and AngularJS to the development team.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    Date:
-                                    <strong>
-                                        January 2015
-                                    </strong>
-                                </li>
-                                <li>
-                                    Technologies:
-                                    <strong>
-                                        C#, ASP.NET WebAPI, AngularJS, SQL Server, HTML5, CSS3, Bootstrap
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="volume-slicing" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Volume Slicing Using Hours</h2>
-                            <hr class="star-primary">
-                            <div id="slideshow">
-                                <img src="img/portfolio/volume-slicing1.png" class="img-responsive img-centered" alt="" />
-                                <img src="img/portfolio/volume-slicing2.png" class="img-responsive img-centered" alt="" />
-                                <img src="img/portfolio/volume-slicing3.png" class="img-responsive img-centered" alt="" />
-                            </div>
-                            <p>
-                                In standard MECOMS™, it’s possible to set different tariffs based on the consumption volume. 
-                                For TCS, it’s necessary to set different tariffs based on the amount of hours.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    Date:
-                                    <strong>
-                                        Feb 2016
-                                    </strong>
-                                </li>
-                                <li>
-                                    Technologies:
-                                    <strong>
-                                        Microsoft Dynamics AX2012 R3, SQL Server
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="ami" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Advanced Metering Infrastructure </h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/ami1.png" class="img-responsive img-centered" alt="">
-                            <p>
-                                Monthly meter charges applicable to contestable customers who have AMI meters installed at their premises as a recurring market support service charges. Pacific Light Energy will need to rebill the customer when they received the pass through AMI charge in the Consumer Transfer Report from Market Support Services periodically. Domains include: Pricing and quotation, billing, meter data management.
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    Date:
-                                    <strong>
-                                        July 2016
-                                    </strong>
-                                </li>
-                                <li>
-                                    Technologies:
-                                    <strong>
-                                        Microsoft Dynamics AX2012 R3, SQL Server
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="stockview" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2><a href="http://stockview.azurewebsites.net/">End of Day US Stock Price</a> </h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/stockview.png" class="img-responsive img-centered" alt="">
-                            <p>
-                                A toying web application for me to learn D3.JS. This application to call Quandl REST API to get end of day US stock price and display different charts, e.g.Open, Low, High, Volume,...
+				<!-- Two -->
+					<section id="two">
+						<h2>Recent Work</h2>
+						<div class="row">
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/admire.jpg" class="image fit thumb"><img src="images/thumbs/admire.jpg" alt="" /></a>
+								<h3><a href="be.admired.online">Admire and be admired </a></h3>
+								<p>A web application for C-suites (CEO, CMO, CTO) to submit a winning code received from a gift package. <br />
+                                Technologies used: Firebase, AngularJS, Google Analytics
+                                </p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3>Thompson Reuters</h3>
+								<p>A web application for Thompson Reuters <br />
+                                Technologies used: Firebase, AngularJS, Google Analytics
+                                </p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/metrics.jpg" class="image fit thumb"><img src="images/thumbs/metrics.jpg" alt="" /></a>
+								<h3><a href="http://www.crab.wa.gov/Metrics/index.cfm"> County Transportation Metrics </a></h3>
+								<p>A graphical web-based dashboard of county transportation performance measures.  <br />
+                                Technologies used: ColdFusion, SQL Server, HTML5, CSS3, jQuery
+                                </p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/cars.jpg" class="image fit thumb"><img src="images/thumbs/cars.jpg" alt="" /></a>
+								<h3><a href="https://www.crab.wa.gov/cars/#/home"> County Road Administration Board Annual Reporting System </a></h3>
+								<p>A web application for 39 counties to submit various reports four times a year. CRAB management staff will review and approve the county reports through this system. <br />
+                                    Technologies used: ASP.Net WebAPI, AngularJS, SQL Server
+                                </p>
+							</article>
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/mobility.jpg" class="image fit thumb"><img src="images/thumbs/mobility.jpg" alt="" /></a>
+								<h3>Mobility</h3>
+								<p>An inventory management system for county road infrastructures: horizontal curves, vertical curves, clear zone segment, etc.  <br />
+                                Technologies used: .Net, ADO.Net data service, SQL Server, GIS 
+                                </p>
+							</article>
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/sspst.jpg" class="image fit thumb"><img src="images/thumbs/sspst.jpg" alt="" /></a>
+								<h3>Systemic Safety Project Selection Tool</h3>
+								<p>Provides a step by step process for conducting systemic safety analysis; analytical techniques for determining a reasonable balance between the implementation of spot safety improvements and systemic safety improvements, and a mechanism for quantifying the benefits of safety improvements implemented through a systemic approach. 
                                 <br />
-                                Link: http://stockview.azurewebsites.net/
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>
-                                    Date:
-                                    <strong>
-                                        December 2016
-                                    </strong>
-                                </li>
-                                <li>
-                                    Technologies:
-                                    <strong>
-                                        D3.js, HTML5, CSS3, Bootstrap, Quandl, RESTful API
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="https://d3js.org/topojson.v0.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-    
-    <script src="js/myplaces.js"></script>
-</body>
+                                    Technologies used: .Net, ADO.Net data service, SQL Server 
+                                </p>
+							</article>
+                            <article class="6u$ 12u$(xsmall) work-item">
+                                <a href="images/fulls/stockview.jpg" class="image fit thumb"><img src="images/thumbs/stockview.jpg" alt="" /></a>
+                                <h3><a href="http://stockview.azurewebsites.net/"> End of Day US Stock Price </a></h3>
+                                <p>
+                                    A toying web application for me to learn D3.JS. This application to call Quandl REST API to get end of day US stock price and display different charts, e.g.Open, Low, High, Volume,...
+                                    Link: http://stockview.azurewebsites.net/ 
+                                    <br />
+                                    Technologies used: D3.js, HTML5, CSS3, Bootstrap, Quandl, RESTful API 
+                                </p>
+                            </article>
+						</div>
+					</section>
+
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+                        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						<li><a href="https://github.com/ngunhaSO" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/nhan-jacky-nguyen-38511056/" class="icon fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
