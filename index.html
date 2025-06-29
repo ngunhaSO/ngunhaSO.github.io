@@ -32,7 +32,7 @@
             <header class="major">
                 <h2>About Me</h2>
             </header>
-            <p>Experienced Full Stack Software Engineer with over 7 years of proven proficiency in designing, developing and maintaining software solutions. Eagerly pursuing roles that allow me to harness my hands-on technical expertise within a dynamic environment, while actively adding value to pioneering projects.</p>
+            <p>Experienced Full Stack Software Engineer with extensive expertise in designing, developing, and maintaining software solutions. Eager to contribute hands-on technical skills in a dynamic environment while driving innovation and delivering value to groundbreaking projects.</p>
             <p>Technologies: </p>
             <p>
                 • Languages: Java, Javascript <br />
@@ -103,6 +103,7 @@
                     <p>
                         The "Make IT Happen" award is an annual recognition program that identifies leaders who have demonstrated exceptional performance, making significant contributions to the achievement of Optum's technology priorities.
                         <br />
+                        <br />
                         During the year 2022, I had the honor of being chosen as one of the 2,700 nominees, thanks to my role in a dedicated team responsible for the modernization of the utilization process. Our principal goal was to extract data from a legacy system and transform it into the FHIR format. Additionally, we introduced a distributed Kafka system to ensure fault tolerance and streamline data processing. Finally, we effectively implemented a mechanism for approval or denial by the Care Advocate Teams.
                     </p>
                 </article>
@@ -114,32 +115,42 @@
             <h2>Recent Work</h2>
             <div class="row">
                 <article class="6u 12u$(xsmall) work-item">
-                    <a href="images/fulls/satellite-orbit.png" class="image fit thumb"><img src="images/thumbs/satellite-orbit.png" alt="" /></a>
-                    <h3><a class="workPorfolio" href="https://satellite-tracker-59fc4.web.app/"> Satellite Orbit </a></h3>
+                    <a href="images/fulls/ais-stream-display.png" class="image fit thumb"><img src="images/thumbs/ais-stream-display.png" alt="" /></a>
+                    <h3><a class="workPorfolio" href="https://aisstreamdisplay.web.app/"> Vessel Movement in Southeast Asia (Hobby Project) </a></h3>
                     <p>
-                        A hobby project designed to fetch Two-Line Element (TLE) data periodically from Celestrak, propagate satellite orbits using Orekit, and visualize them in a 3D interactive environment. The system leverages Java Spring Boot for backend services, Angular for frontend development, and Cesium.js for 3D visualization of satellite trajectories. Data persistence is handled using PostgreSQL, while AWS EC2 ensures seamless hosting and scalability. This project combines advanced astrodynamics computations with modern web technologies to create an engaging and educational tool for satellite orbit analysis.
+                        <span>This hobby project visualizes maritime vessel movements in Southeast Asia using real-time AIS data. The backend, built with Spring Boot, reads live data from AISStream.io via sockets and publishes it to Apache Kafka topics using Avro for schema management. A Kafka Streams topology joins two key data streams — static ship information and dynamic position reports — to generate comprehensive vessel movement data.</span>
+                        <br />
+                        <br />
+                        <span>On the frontend, Angular and CesiumJS are used to render 3D visualizations of ship trajectories on a virtual globe. The frontend establishes a STOMP WebSocket connection to the backend to receive processed vessel movement data from Kafka Streams in real time. Due to the cost of cloud deployment (e.g., EC2), the application currently runs with mock data to simulate live activity.</span>
+                        <br />
+                        <br />
+                        <span>A local demo of the full system is available upon request.</span>
+                        <br />
+                        <b>Technologies used:</b> Java Spring Boot, Angular, Cesium.js, Kafka, KafkaStream, and Web Socket
+                    </p>
+                </article>
+                <article class="6u$ 12u$(xsmall) work-item">
+                    <a href="images/fulls/satellite-orbit.png" class="image fit thumb"><img src="images/thumbs/satellite-orbit.png" alt="" /></a>
+                    <h3><a class="workPorfolio" href="https://satellite-tracker-59fc4.web.app/"> Satellite Orbit (Hobby Project) </a></h3>
+                    <p>
+                        <span>A hobby project designed to fetch Two-Line Element (TLE) data periodically from Celestrak, propagate satellite orbits using Orekit, and visualize them in a 3D interactive environment. The system leverages Java Spring Boot for backend services, Angular for frontend development, and Cesium.js for 3D visualization of satellite trajectories. </span>
+                        <br />
+                        <br />
+                        <span>Data persistence is handled using PostgreSQL, while AWS EC2 ensures seamless hosting and scalability. This project combines advanced astrodynamics computations with modern web technologies to create an engaging and educational tool for satellite orbit analysis.</span>
+                        <br />
                         <br />
                         <b>Technologies used:</b> Java Spring Boot, Angular, Cesium.js, Orekit, AWS EC2, and PostgresDB
                     </p>
                 </article>
-                <article class="6u$ 12u$(xsmall) work-item">
+                <article class="6u 12u$(xsmall) work-item">
                     <a href="images/thumbs/simulator_detail.png" class="image fit thumb">
                         <img src="images/fulls/simulator_full.png" alt="" />
                     </a>
-                    <h3><a class="workPorfolio" href="https://replica-circuit-design.web.app/app"> Circuit Simulator </a></h3>
+                    <h3><a class="workPorfolio" href="https://replica-circuit-design.web.app/app"> Circuit Simulator (Hobby Project) </a></h3>
                     <p>
-                        A web-based emulation of a circuit simulator, showcasing a subset of features through local replication for demonstration purposes.
+                        A web-based circuit simulator emulation as a hobby project, showcasing a subset of core features through local replication for interactive demonstrations and educational purposes.
                         <br />
                         <b>Technologies used:</b> React.js
-                    </p>
-                </article>
-                <article class="6u 12u$(xsmall) work-item">
-                    <a href="images/fulls/robotics-dashboard.png" class="image fit thumb"><img src="images/thumbs/robotics-dashboard.png" alt="" /></a>
-                    <h3> Robotics Dashboard </h3>
-                    <p>
-                        A dashboard for Murata to have an overview how their MiR robots perform. Once the robot is on a mission, it will broadcast its location in realtime and the administrators will be able to view the heatmap. The administrators can also communicate with others via chat messages. 
-                        <br />
-                        <b>Technologies used:</b> Spring Boot, Stompjs, Angular, MySQL, Node.js
                     </p>
                 </article>
                 <article class="6u$ 12u$(xsmall) work-item">
@@ -151,17 +162,7 @@
                         <b>Technologies used:</b> Node.js, AngularJS, MongoDB, Redis, SQL Server
                     </p>
                 </article>
-            
                 <article class="6u 12u$(xsmall) work-item">
-                    <a href="images/fulls/ami.jpg" class="image fit thumb"><img src="images/thumbs/ami.jpg" alt="" /></a>
-                    <h3>Advance Metering Infrastructure</h3>
-                    <p>
-                        Advanced Metering Infrastructure (AMI) charge is the monthly meter charges applicable only to contestable customers who have AMI meters installed at their premises as a recurring market support service charges.  <br />
-                        <b>Technologies used:</b> Dynamics AX 2012, Axapta, SQL Server
-                    </p>
-                </article>
-
-                <article class="6u$ 12u$(xsmall) work-item">
                     <a href="images/fulls/metrics.jpg" class="image fit thumb"><img src="images/thumbs/metrics.jpg" alt="" /></a>
                     <h3>County Transportation Metrics</h3>
                     <p>
@@ -170,7 +171,7 @@
                     </p>
                 </article>
 
-                <article class="6u 12u$(xsmall) work-item">
+                <article class="6u$ 12u$(xsmall) work-item">
                     <a href="images/fulls/mobility.jpg" class="image fit thumb"><img src="images/thumbs/mobility.jpg" alt="" /></a>
                     <h3>Mobility</h3>
                     <p>
@@ -179,7 +180,7 @@
                     </p>
                 </article>
 
-                <article class="6u$ 12u$(xsmall) work-item">
+                <article class="6u 12u$(xsmall) work-item">
                     <a href="images/fulls/sspst.jpg" class="image fit thumb"><img src="images/thumbs/sspst.jpg" alt="" /></a>
                     <h3>Systemic Safety Project Selection Tool</h3>
                     <p>
